@@ -127,13 +127,13 @@ Evening (6-10pm):
 - Generally lowest risk (x0.7)
 - Except cluster (x1.5)
 
-## Demographics:
+## Demographics
 
 - Female + Hormonal + Stress: Migraine x4.0
 - Male + Smoking + Night shift: Cluster x5.0
 - Office work + Screen time + Anxiety: Tension x3.0
 
-## Environment:
+## Environment
 
 Weather:
 - Barometric change: x1.5
