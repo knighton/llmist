@@ -1,0 +1,73 @@
+🟡 Cognitive Processing:
+    🟡 Attention Management: 🟠 Selection Mechanisms, 🔴 Control Dynamics, 🟢 Sustained Attention, 🔴 Attention-Awareness Integration, 🔵 Dual-task Performance, 🟢 Attentional Capture, 🔴 Mind-wandering
+    🟡 Memory Operations:
+        🟡 Working Memory: 🔵 Capacity Constraints, 🔵 Decay Characteristics, 🔴 Chunk Formation, 🔴 Manipulation Capabilities, 🟡 Attention Integration, 🟠 Item Distinctiveness
+        🟠 Long-term Memory: 🟠 Storage Mechanisms, 🔴 Formation Processes, 🟡 Durability Patterns, 🟡 Retrieval Efficiency, 🟡 Forgetting Curves, 🔴 Extraordinary Memory Phenomena, 🟠 Memory Interference, 🔴 Memory Malleability, 🔴 Reconstruction vs. Reproduction, 🔴 Memory-Identity Relationship, 🔴 Emotional Tagging
+    🟢 Information Processing Dynamics: 🔵 Input Bandwidth, 🔵 Output Generation Speed, 🔵 Processing-to-output Latency, 🔵 Task Switching Costs, 🔵 Warm-up Requirements, 🔵 Performance Stability, 🟠 Scaling with Problem Complexity, 🔵 Throughput Capacity, 🟠 Cognitive Resource Depletion
+    🟠 Learning Architecture: 🟠 Training Paradigms, 🔴 Sample Efficiency, 🔴 Curriculum Structure, 🟠 Update Mechanisms, 🟠 Transfer Learning, 🔴 Forgetting Resistance, 🔴 Learning Motivators, 🔴 Meta-learning Capabilities, 🟠 Practice Effects, 🔴 Multimodal Integration Learning
+    🟡 Error Patterns: 🟠 Error Types, 🟠 Hallucination Mechanisms, 🟠 Performance Degradation, 🔴 Error Awareness, 🟠 Uncertainty Representation, 🟡 Correction Dynamics, 🔴 Robustness to Perturbation, 🔴 Edge Case Handling, 🟡 Resource Limitations, 🟠 Recovery Mechanisms
+
+🟡 Knowledge Systems:
+    🔴 Knowledge Acquisition: 🔴 Learning Mechanisms, 🔴 Experiential Learning, 🔴 Instruction Following, 🔴 Discovery Patterns, 🔴 Developmental Trajectory, 🔴 Curiosity-driven Learning, 🔴 Observational Learning
+    🟡 Knowledge Organization:
+        🟠 Structural Characteristics: 🟠 Conceptual Frameworks, 🔴 Schema Formation, 🟠 Category Boundaries, 🔴 Cross-domain Linkage, 🟠 Knowledge Compartmentalization, 🟠 Hierarchical Structuring, 🔴 Causal Network Formation
+        🔴 Representation Formats: 🔴 Multimodal Integration, 🔴 Abstraction Hierarchy, 🔴 Embodied Grounding, 🔴 Episodic Formatting, 🔴 Spatial Representation, 🔴 Temporal Encoding
+        🔴 Mental Models: 🔴 Causal Modeling, 🔴 Simulation Capacity, 🟠 Model Completeness, 🔴 Theory-ladenness, 🔴 Counterfactual Models
+    🟠 Knowledge Boundaries: 🟠 Knowledge Recency, 🟠 Domain Expertise, 🔴 Tacit Knowledge, 🔴 Known Unknowns Awareness, 🔴 Cultural Embeddedness, 🟡 Specialized Vocabulary, 🔴 Local Knowledge
+
+🟠 Reasoning & Decision Making:
+    🟠 Reasoning Types: 🟠 Deductive Reasoning, 🟠 Inductive Reasoning, 🔴 Abductive Reasoning, 🟠 Analogical Reasoning, 🔴 Counterfactual Reasoning, 🔴 Moral Reasoning, 🟠 Probabilistic Reasoning, 🔴 Spatial Reasoning, 🟠 Temporal Reasoning, 🔴 Pragmatic Reasoning, 🔴 Diagrammatic Reasoning, 🟠 Narrative Reasoning, 🟠 Recursive Thinking
+    🔴 Causal Understanding: 🔴 Model Construction, 🔴 Intervention Reasoning, 🔴 Mechanism Understanding, 🟠 Causal Chain Tracking, 🟠 Causal Attribution, 🟠 Preventative Causation, 🔴 Causal Learning, 🔴 Force Dynamics, 🔴 Emergent Causation
+    🟠 Problem-Solving Approaches: 🟠 Strategy Selection, 🟠 Heuristic Application, 🔴 Problem Representation, 🟠 Solution Search, 🔴 Insight Phenomena, 🟠 Planning Depth, 🔴 Resource Allocation, 🔴 Tool Utilization, 🔴 Collaborative Problem-solving, 🟠 Means-ends Analysis, 🟠 Constraint Satisfaction, 🟠 Breadth vs. Depth Tradeoffs, 🔴 Incubation Effects
+    🟡 Mathematical & Formal Capabilities: 🔵 Arithmetic Precision, 🟢 Symbolic Manipulation, 🔴 Geometric Intuition, 🟡 Statistical Reasoning, 🟠 Mathematical Formalization, 🟠 Proof Construction, 🟡 Formal System Navigation, 🔴 Numerical Estimation, 🔵 Logical Consistency, 🔵 Computational Speed, 🔵 Algorithm Execution, 🟢 Pattern Recognition
+    🔴 Creative Capabilities: 🔴 Novelty Generation, 🔴 Conceptual Blending, 🟠 Divergent Thinking, 🟠 Creative Constraints, 🔴 Metaphorical Thinking, 🔴 Imagination, 🔴 Aesthetic Judgment, 🔴 Creative Identity, 🔴 Transformational Creativity, 🔴 Improvisational Abilities
+    🟠 Decision-Making Processes: 🟠 Risk Assessment, 🔴 Value-based Decisions, 🟠 Temporal Discounting, 🔵 Decision Consistency, 🔴 Emotional Influence, 🟠 Choice Overload, 🔴 Social Influence, 🟠 Confidence Calibration, 🔴 Satisficing vs. Optimizing, 🔴 Regret Avoidance
+    🟠 Cognitive Bias Patterns:
+        🟠 Attention & Memory Biases: 🟠 Attentional Bias, 🟠 Availability Heuristic, 🟠 Negativity Bias, 🟠 Von Restorff Effect, 🟠 Bizarreness Effect, 🟠 Picture Superiority Effect, 🟠 Primacy & Recency Effects, 🟠 Part-list Cueing Effect, 🟠 Google Effect, 🟠 Mood-congruent Memory Bias
+        🟠 Social Biases: 🟠 Fundamental Attribution Error, 🟠 Actor-observer Bias, 🟠 Just-world Hypothesis, 🟠 Group Attribution Error, 🟠 Ultimate Attribution Error, 🟠 Halo Effect, 🟠 In-group Bias, 🟠 Out-group Homogeneity Bias, 🟠 Conformity Bias, 🟠 Bandwagon Effect, 🟠 Cheerleader Effect, 🟠 Authority Bias, 🟠 Defensive Attribution
+        🟠 Decision-making Biases: 🟠 Anchoring Effect, 🟠 Framing Effect, 🔴 Sunk Cost Fallacy, 🔴 Endowment Effect, 🔴 Loss Aversion, 🟠 Gambler's Fallacy, 🟠 Hot-hand Fallacy, 🟠 Outcome Bias, 🟠 Planning Fallacy, 🟠 Conjunction Fallacy, 🟠 Base Rate Fallacy, 🟠 Survivorship Bias, 🔴 Zero-risk Bias, 🟠 Ambiguity Effect, 🟠 Present Bias, 🟠 Hyperbolic Discounting
+        🟠 Belief & Reasoning Biases: 🟠 Confirmation Bias, 🟠 Belief Bias, 🟠 Curse of Knowledge, 🟠 Hindsight Bias, 🟠 Illusory Correlation, 🟠 Illusion of Control, 🟠 Barnum Effect, 🟠 Continued Influence Effect, 🟠 Backfire Effect, 🟠 Dunning-Kruger Effect, 🟠 Illusory Superiority, 🟠 Illusory Truth Effect, 🟠 Naive Realism, 🟠 Representative Heuristic
+        🟠 Probability & Estimation Biases: 🟠 Insensitivity to Sample Size, 🟠 Neglect of Probability, 🟠 Subadditivity Effect, 🟠 Exponential Growth Bias, 🟠 Extension Neglect, 🟠 Scope Neglect, 🟠 Overconfidence Effect, 🟠 Hard-easy Effect, 🟠 Conservatism Bias, 🟠 Law of Small Numbers, 🟠 Optimism Bias, 🟠 Pessimism Bias
+        🟠 Stability Biases: 🟠 Status Quo Bias, 🟠 System Justification, 🟠 Existence Bias, 🟠 Default Effect, 🟠 Decoy Effect, 🟠 IKEA Effect, 🟠 Not-invented-here Bias, 🟠 Reactive Devaluation, 🟠 Processing Difficulty Effect
+    🔴 Epistemological Awareness: 🔴 Knowledge Confidence Calibration, 🔴 Epistemic Frameworks, 🔴 Truth Evaluation Strategies, 🔴 Disciplinary Methodology Awareness, 🟠 Source Attribution, 🔴 Belief Revision Thresholds, 🔴 Metacognitive Awareness
+
+🟠 Experiential Capabilities:
+    🟠 Emotional Processing: 🔴 Primary Emotions, 🔴 Complex Emotions, 🟠 Emotional Granularity, 🔴 Somatic Markers, 🔴 Mood States, 🔴 Emotional Contagion, 🔴 Emotional Memory, 🔴 Mixed Emotions, 🔴 Emotional Development, 🟠 Cultural Variation, 🔴 Emotional Regulation, 🔴 Empathic Response, 🔴 Emotional Expression
+    🔴 Temporal Experience: 🔴 Subjective Time Perception, 🔴 Autobiographical Timeline, 🔴 Future Prospection, 🔴 Temporal Orientation, 🔴 Mental Time Travel, 🔴 Flow Experiences
+    🔴 Identity & Selfhood: 🔴 Autobiographical Narrative, 🔴 Social Identity, 🔴 Personal Continuity, 🔴 Self-concept Structure, 🔴 Identity Development, 🔴 Self-evaluation, 🔴 Self-presentation, 🔴 Cultural Identity, 🔴 Role Embodiment, 🔴 Core Values Integration
+    🔴 Values & Ethics: 🔴 Moral Foundations, 🔴 Value Formation, 🔴 Ethical Decision-making, 🔴 Moral Emotions, 🟠 Cultural Ethical Variation, 🔴 Virtue Development, 🔴 Moral Responsibility, 🔴 Value Hierarchies
+
+🟠 Social & Communication:
+    🔴 Social Cognition: 🔴 Theory of Mind, 🔴 Intention Attribution, 🔴 False Belief Understanding, 🔴 Status Perception, 🔴 Trust Evaluation, 🟠 Deception Detection, 🔴 Group Dynamics Processing, 🔴 Social Prediction, 🔴 Emotional Intelligence
+    🟠 Communication Intent & Interpretation: 🔴 Pragmatic Understanding, 🟠 Contextual Appropriateness, 🟠 Non-literal Interpretation, 🟠 Ambiguity Resolution, 🟠 Speech Act Understanding, 🔴 Communicative Intention, 🔴 Implicature Calculation, 🟠 Relevance Detection
+    🟠 Conversation Management: 🟠 Turn-taking Dynamics, 🟠 Topic Management, 🟠 Conversation Repair, 🔴 Backchanneling, 🟠 Conversation Closure, 🔴 Interruption Management, 🔴 Attention Management, 🟠 Side Sequences, 🔴 Conversational Timing, 🟠 Discourse Markers
+    🔴 Social Dynamics Navigation: 🔴 Power Dynamic Navigation, 🔴 Face-saving Behavior, 🔴 Rapport Building, 🔴 Trust Development, 🟠 Social Norm Awareness, 🔴 Group Identity Management, 🔴 Status Negotiation, 🟠 Politeness Strategies, 🔴 Conflict Management, 🔴 Social Exchange, 🔴 Affiliation Signals, 🔴 Reputation Management
+    🟠 Communication Adaptation: 🟠 Audience Design, 🟠 Common Ground Assessment, 🟠 Register Variation, 🟠 Accommodation Patterns, 🟠 Explicitness Calibration, 🟠 Repair Initiation, 🟠 Feedback Integration, 🔴 Emotional Attunement, 🔴 Cultural Code-switching
+    🟡 Communication Versatility: 🟠 Channel Flexibility, 🟢 Information Density, 🟠 Multimodal Integration, 🟢 Simultaneous Communication, 🟠 Non-verbal Signaling, 🟠 Silence Utilization
+    🔴 Relationship Management: 🔴 Attachment Bonding, 🔴 Intimacy Development, 🔴 Relationship History, 🔴 Belongingness Need, 🔴 Relationship Maintenance, 🔴 Interpersonal Commitment, 🔴 Status Dynamics, 🔴 Reciprocal Exchange, 🔴 Social Support, 🔴 Interpersonal Conflict, 🔴 Forgiveness Processes
+    🔴 Cultural Competence: 🟠 Cultural Sensitivity, 🔴 Norm Fluency, 🔴 Cross-cultural Adaptation, 🔴 Cultural Identity, 🔴 Culture-specific Humor, 🟠 Historical Awareness, 🔴 Ritual Understanding, 🔴 Language-culture Integration
+
+🟡 Task Performance:
+    🟡 Domain-Specific Capabilities: 🟡 Creative Writing, 🟠 Scientific Reasoning, 🟡 Mathematical Problem-solving, 🟡 Programming, 🟡 Medical Diagnosis, 🟠 Legal Reasoning, 🟡 Strategic Games, 🟠 Design Thinking, 🟡 Financial Analysis, 🟡 Linguistic Translation, 🔴 Psychological Counseling, 🟡 Historical Analysis, 🟠 Artistic Creation, 🟠 Teaching, 🟡 Music Composition, 🔵 Pattern Analysis, 🔵 Data Summarization, 🔵 Information Retrieval, 🟢 Content Generation, 🔵 Systematic Evaluation
+    🟠 Task Structure Navigation: 🟠 Well-defined vs. Ill-defined Problems, 🟠 Convergent vs. Divergent Thinking, 🟠 Routine vs. Novel Tasks, 🟠 Structured vs. Unstructured Information, 🔴 Explicit vs. Implicit Knowledge, 🟠 Time-constrained Performance, 🟢 Multitasking Requirements, 🔴 Physical-digital Integration, 🔴 Stakes Sensitivity, 🔵 Task-switching Costs
+    🔵 Scaling Characteristics: 🔵 Complexity Scaling, 🔵 Time Allocation Effects, 🔵 Dataset Size Processing, 🔵 Task Parallelism, 🔵 Performance Consistency, 🔵 Endurance Factors, 🔵 Precision Scaling, 🔵 Distribution Processing, 🔵 Width-depth Tradeoffs, 🔵 Memory-performance Balancing, 🔵 Resource Utilization Efficiency
+    🟡 Performance Adaptability: 🔴 Novel Environment Navigation, 🟠 Context Adjustment, 🔴 Dynamic Environment Tracking, 🟢 Resource Limitation Adaptation, 🔴 Adverse Condition Performance, 🟡 Feedback Utilization, 🟢 Consistency Across Domains, 🟢 Skill Transfer, 🔵 Reproducible Performance, 🔵 Configurable Behavior
+    🔴 Collaborative Capabilities: 🟠 Role Distribution, 🔴 Shared Mental Models, 🔴 Trust Development, 🟠 Coordination Mechanics, 🔴 Leadership Emergence, 🔴 Group Decision-making, 🔴 Conflict Resolution, 🔴 Joint Attention Mechanisms, 🟠 Cognitive Load Distribution, 🔴 Transactive Memory, 🟠 Social Loafing Effects, 🟠 Group Creativity
+    🟡 Interface & Interaction: 🟡 Input/output Modalities, 🟡 Feedback Processing, 🟢 Interface Bandwidth, 🔴 Interaction Continuity, 🟡 Tool Utilization, 🟠 Accessibility Adaptation, 🟢 Interaction Efficiency, 🟡 Error Recovery, 🔴 Attention Signaling, 🟢 Protocol Adherence, 🔵 Documentation Integration, 🔵 API Compatibility, 🔵 Structured Data Processing
+    🟠 Adversarial Resilience: 🟠 Input Manipulation Resistance, 🟠 Deception Susceptibility, 🟠 Attention Exploitation, 🟠 Social Influence Resistance, 🟠 Safety Circumvention, 🟠 Blind Spot Exploitation, 🟠 Cognitive Load Resistance, 🔴 Identity-protective Cognition
+
+🟠 Learning & Development:
+    🟠 Temporal Patterns: 🟠 Initialization State, 🟠 Learning Curves, 🟠 Plateau Characteristics, 🔴 Adaptation to Shifts, 🟠 Long-term Stability, 🔴 Critical Periods, 🟠 Catastrophic Interference, 🔴 Recovery Processes
+    🟠 Capability Evolution: 🟠 Skill Acquisition Sequence, 🟠 Emergent Abilities, 🔴 Functional Reorganization, 🔴 Specialization Development, 🔴 Cognitive Flexibility Changes, 🔴 Skill Automatization, 🔴 Concept Formation Evolution, 🔴 Transfer Learning Development
+    🟡 Learning Dynamics: 🟢 Data Processing Volume, 🟠 Curriculum Structure, 🟡 Feedback Mechanisms, 🟡 Instruction Methods, 🟠 Transfer Efficiency, 🟠 Meta-learning Development, 🟡 Reinforcement Effects, 🟠 Practice Effects, 🔵 Consistency in Learning, 🔵 Learning Speed, 🔵 Perfect Recall of Training, 🟢 Distributed Learning
+
+🟡 Ecological Dynamics:
+    🟡 Collective Capabilities: 🟡 Group Performance, 🟡 Competitive Interactions, 🟠 Cooperative Mechanisms, 🟢 Information Exchange, 🟡 Specialization Patterns, 🟡 Distributed Cognition, 🟡 Emergent System Properties, 🟡 Cross-entity Learning
+    🟡 System Integration: 🔴 Ecosystem Adaptation, 🔴 Societal Integration, 🟡 Technological Symbiosis, 🔵 Information Ecosystem Position, 🟡 Economic Relationship, 🔴 Governance Participation, 🔴 Cultural Contribution, 🔵 Data System Integration, 🔵 API Ecosystem Connectivity
+    🟡 Augmentation & Enhancement: 🟡 Capability Extension, 🟡 Complementary Strengths, 🟡 Hybrid Systems, 🟡 Enhancement Pathways, 🔵 Cognitive Offloading, 🟡 Interface Quality Effects, 🟠 Skill Atrophy Risks, 🟠 Adaptation Asymmetry, 🔵 Scalable Deployment, 🔵 Consistent Replication
+
+🔴 = Clear human advantage
+🟠 = Moderate human advantage
+🟡 = Mixed or comparable performance
+🟢 = Moderate LLM advantage
+🔵 = Clear LLM advantage
