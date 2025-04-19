@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Cake Cutting Compendium</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #212121;
+            color: #000000;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+        
+        .container {
+            padding: 40px;
+            max-width: 100%;
+            overflow-x: auto;
+            background-color: #212121;
+            min-height: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+            text-shadow: 0 0 20px white;
+            font-size: 4em;
+            color: #000000;
+            font-weight: normal;
+            letter-spacing: 1px;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: -10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-style: italic;
+            color: #fea;
+            text-shadow: 0 0 20px #fa4;
+        }
+        
+        .cake-table-container {
+            width: 95%;
+            margin: 0 auto;
+            overflow-x: auto;
+            border-radius: 15px;
+            box-shadow: 
+                0 0 15px rgba(255, 255, 255, 0.3),
+                0 0 30px rgba(255, 255, 255, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        .cake-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            background: radial-gradient(ellipse at center, #f5f5f5 0%, #e6e6e6 100%);
+            border-radius: 15px;
+            overflow: hidden;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .cake-table th, .cake-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            color: #000000;
+            position: relative;
+        }
+        
+        .cake-table th {
+            background-color: rgba(245, 245, 245, 0.9);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .cake-table tr:nth-child(even) td {
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+        
+        .cake-table tr:hover td {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        
+        .cake-table tr:first-child th:first-child {
+            border-top-left-radius: 15px;
+        }
+        
+        .cake-table tr:first-child th:last-child {
+            border-top-right-radius: 15px;
+        }
+        
+        .cake-table tr:last-child td:first-child {
+            border-bottom-left-radius: 15px;
+        }
+        
+        .cake-table tr:last-child td:last-child {
+            border-bottom-right-radius: 15px;
+        }
+        
+        .cake-table td:first-child {
+            font-weight: bold;
+        }
+        
+        .cake-table tr:nth-child(4n+1) td:first-child {
+            border-left: 3px solid rgba(255, 100, 100, 0.5);
+        }
+        
+        .cake-table tr:nth-child(4n+2) td:first-child {
+            border-left: 3px solid rgba(100, 100, 255, 0.5);
+        }
+        
+        .cake-table tr:nth-child(4n+3) td:first-child {
+            border-left: 3px solid rgba(100, 255, 100, 0.5);
+        }
+        
+        .cake-table tr:nth-child(4n+4) td:first-child {
+            border-left: 3px solid rgba(255, 255, 100, 0.5);
+        }
+        
+        .rating {
+            color: gold;
+            letter-spacing: -2px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        }
+        
+        /* Cake frosting effect */
+        .cake-table::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(45deg, 
+                    transparent 65%, 
+                    rgba(255, 255, 255, 0.1) 70%, 
+                    transparent 75%);
+            pointer-events: none;
+        }
+        
+        /* Make the scrollbar cake-themed */
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #212121;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #f5f5f5, #e6e6e6);
+            border-radius: 6px;
+            border: 2px solid #212121;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+        }
+        
+        /* Make the table responsive */
+        @media (max-width: 1200px) {
+            .cake-table th, .cake-table td {
+                padding: 8px 10px;
+                font-size: 0.9em;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .cake-table-container {
+                width: 98%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Ultimate Cake Cutting Compendium</h1>
+        <h2 class="description">A comprehensive analysis of cake cutting techniques across all dimensions, rendered as an elegant cake-like surface.</h2>
+        
+        <div class="cake-table-container">
+            <table class="cake-table">
+                <thead>
+                    <tr>
+                        <th>Area</th><th>Includes</th><th>Excludes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr><td>Incentives</td><td>• Economic: Fair division where participants value different parts differently<br>• Social: Celebration rituals (birthday person cuts first)<br>• Practical: Maximizing serving count<br>• Aesthetic: Creating visually appealing portions<br>• Computational: Testing algorithmic fairness</td><td>• Purely destructive cutting<br>• Cutting methods that create uneven quality distribution</td></tr>
+                        <tr><td>Problems</td><td>• The classic "I cut, you choose" dilemma<br>• Envy-free division among n>2 people<br>• Cutting layered cakes with consistent layer ratios<br>• Dividing cakes with uneven feature distribution (e.g., decorations, fillings)<br>• Efficient cutting with minimal crumbling<br>• Preserving structural integrity during cutting</td><td>• Problems unrelated to division fairness<br>• Issues that assume all cake parts are equally valued</td></tr>
+                        <tr><td>Goals</td><td>• Perfect geometric division (equal volume/weight/area)<br>• Subjective fairness (all receivers equally satisfied)<br>• Speed and efficiency<br>• Maintaining cake aesthetics<br>• Even distribution of features (frosting, toppings, layers)<br>• Maximizing joy/satisfaction across recipients<br>• Creating specific shapes or designs through cutting patterns</td><td>• Goals contradicting recipient satisfaction<br>• Outcomes that waste cake material</td></tr>
+                        <tr><td>Approaches</td><td>**Geometric:**<br>• Radial cuts (from center outward)<br>• Parallel cuts (grid pattern)<br>• Concentric circular cuts<br>• Spiral cutting (continuous cut spiraling inward)<br>• Triangulation (division into triangular pieces)<br>• Wedge and slice combinations<br><br>**Mathematical/Algorithmic:**<br>• Moving-knife procedures<br>• Stromquist's envy-free division<br>• Dubins-Spanier method<br>• Even-Paz algorithm for reducing cuts<br>• Brams-Taylor-Zwicker procedure<br><br>**Practical/Culinary:**<br>• Hot knife method (heated for clean cuts)<br>• Dental floss technique (for soft cakes)<br>• Wire cutter approach<br>• Two-fork method (for cheesecakes)<br>• Template-guided cutting<br>• Freezing before cutting (for delicate cakes)<br><br>**Cultural/Social:**<br>• Japanese precision cutting<br>• Wedding cake ceremonial first cut<br>• Serving order by age/status in various cultures<br>• British royal fruitcake distribution traditions</td><td>• Approaches that damage cake structure unnecessarily<br>• Methods requiring specialized equipment unavailable in typical settings<br>• Techniques that violate food safety<br>• Approaches that favor one recipient over others without justification</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
