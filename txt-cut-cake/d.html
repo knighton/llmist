@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Cake Cutting Compendium</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #212121;
+            color: #000000;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+        
+        .container {
+            padding: 40px;
+            max-width: 100%;
+            overflow-x: auto;
+            background-color: #212121;
+            min-height: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+            text-shadow: 0 0 20px white;
+            font-size: 4em;
+            color: #000000;
+            font-weight: normal;
+            letter-spacing: 1px;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: -10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-style: italic;
+            color: #fea;
+            text-shadow: 0 0 20px #fa4;
+        }
+        
+        .cake-table-container {
+            width: 95%;
+            margin: 0 auto;
+            overflow-x: auto;
+            border-radius: 15px;
+            box-shadow: 
+                0 0 15px rgba(255, 255, 255, 0.3),
+                0 0 30px rgba(255, 255, 255, 0.2),
+                0 0 45px rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        .cake-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 100%;
+            background: radial-gradient(ellipse at center, #f5f5f5 0%, #e6e6e6 100%);
+            border-radius: 15px;
+            overflow: hidden;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .cake-table th, .cake-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            color: #000000;
+            position: relative;
+        }
+        
+        .cake-table th {
+            background-color: rgba(245, 245, 245, 0.9);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .cake-table tr:nth-child(even) td {
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+        
+        .cake-table tr:hover td {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        
+        .cake-table tr:first-child th:first-child {
+            border-top-left-radius: 15px;
+        }
+        
+        .cake-table tr:first-child th:last-child {
+            border-top-right-radius: 15px;
+        }
+        
+        .cake-table tr:last-child td:first-child {
+            border-bottom-left-radius: 15px;
+        }
+        
+        .cake-table tr:last-child td:last-child {
+            border-bottom-right-radius: 15px;
+        }
+        
+        .cake-table td:first-child {
+            font-weight: bold;
+        }
+        
+        .cake-table tr:nth-child(4n+1) td:first-child {
+            border-left: 3px solid rgba(255, 100, 100, 0.5);
+        }
+        
+        .cake-table tr:nth-child(4n+2) td:first-child {
+            border-left: 3px solid rgba(100, 100, 255, 0.5);
+        }
+        
+        .cake-table tr:nth-child(4n+3) td:first-child {
+            border-left: 3px solid rgba(100, 255, 100, 0.5);
+        }
+        
+        .cake-table tr:nth-child(4n+4) td:first-child {
+            border-left: 3px solid rgba(255, 255, 100, 0.5);
+        }
+        
+        .rating {
+            color: gold;
+            letter-spacing: -2px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        }
+        
+        /* Cake frosting effect */
+        .cake-table::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(45deg, 
+                    transparent 65%, 
+                    rgba(255, 255, 255, 0.1) 70%, 
+                    transparent 75%);
+            pointer-events: none;
+        }
+        
+        /* Make the scrollbar cake-themed */
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #212121;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #f5f5f5, #e6e6e6);
+            border-radius: 6px;
+            border: 2px solid #212121;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+        }
+        
+        /* Make the table responsive */
+        @media (max-width: 1200px) {
+            .cake-table th, .cake-table td {
+                padding: 8px 10px;
+                font-size: 0.9em;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .cake-table-container {
+                width: 98%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Ultimate Cake Cutting Compendium</h1>
+        <h2 class="description">A comprehensive analysis of cake cutting techniques across all dimensions, rendered as an elegant cake-like surface.</h2>
+        
+        <div class="cake-table-container">
+            <table class="cake-table">
+                <thead>
+                    <tr>
+                        <th>Method/Technique</th><th>Primary Tool</th><th>Secondary Tool</th><th>Cake Type Suitability</th><th>Texture Consideration</th><th>Temperature Requirement</th><th>Cut Pattern</th><th>Mathematical Principle</th><th>Cut Precision</th><th>Visual Aesthetic</th><th>Portion Control</th><th>Skill Level Required</th><th>Cultural Significance</th><th>Professional Context</th><th>Home Applicability</th><th>Historical Origin</th><th>Scientific Principle</th><th>Serving Efficiency</th><th>Special Considerations</th><th>Innovative Applications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr><td>**Classical Radial**</td><td>Chef's knife</td><td>Cake server</td><td>Round layer cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Square cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span><span class="rating">☆</span><span class="rating">☆</span><br>Sheet cakes <span class="rating">★</span><span class="rating">☆</span><span class="rating">☆</span><span class="rating">☆</span><span class="rating">☆</span></td><td>Works with most textures except very soft</td><td>Room temperature ideal</td><td>Center-to-edge wedges at equal angles</td><td>Division of circle into equal sectors; constant angle, varying arc length</td><td>Moderate; depends on steady hand</td><td>Traditional; formal presentation</td><td>Consistent by area, not by weight</td><td>Beginner to Intermediate</td><td>Western birthday tradition; making wishes before cutting</td><td>Standard for restaurants, banquets</td><td>Universal; intuitive method</td><td>Ancient; depicted in Roman feasts</td><td>Uniform angular distribution; geometric division</td><td>Moderate; each piece requires separate cut</td><td>First piece difficult to remove cleanly; stabilize cake</td><td>Digital angle guides; LED-projected cutting lines</td></tr>
+                        <tr><td>**Grid Pattern**</td><td>Long slicing knife</td><td>Ruler or guide</td><td>Sheet cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Square cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span><br>Round cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span><span class="rating">☆</span><span class="rating">☆</span></td><td>Best for firm, dense cakes</td><td>Any temperature</td><td>Parallel cuts in one direction, then perpendicular cuts</td><td>Cartesian coordinate system; rectangular tessellation</td><td>High; consistent spacing possible</td><td>Organized; institutional appearance</td><td>Highly consistent portions by area</td><td>Beginner</td><td>Common in classroom/office settings; communal sharing</td><td>Cafeterias; mass catering; commercial production</td><td>Simple for home use</td><td>Medieval European; efficient distribution for feasts</td><td>Rectangular tessellation optimization</td><td>High; maximum pieces with minimum cuts</td><td>Corner pieces have more frosting; center pieces may lack edges</td><td>CNC cutting machines; automated portion control</td></tr>
+                        <tr><td>**Spiral Cut**</td><td>Flexible blade</td><td>Turntable</td><td>Round cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span><br>Cheesecakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span><span class="rating">☆</span><br>Mousse cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span></td><td>Requires semi-firm texture</td><td>Slightly chilled (40-45°F)</td><td>Continuous spiral from edge to center</td><td>Archimedean spiral; logarithmic spacing</td><td>Low; difficult to maintain consistency</td><td>Avant-garde; conversation starter</td><td>Poor consistency; varies along spiral</td><td>Expert</td><td>Symbolic of continuity in some Asian traditions</td><td>Molecular gastronomy; upscale restaurants</td><td>Difficult for amateur use</td><td>Modern (1990s) culinary innovation</td><td>Continuous function in polar coordinates</td><td>Low; impractical for serving</td><td>Creates one continuous strip; difficult to portion</td><td>Spiral-sliced cake rolls; deconstructed desserts</td></tr>
+                        <tr><td>**Hot-Knife Method**</td><td>Chef's knife (heated)</td><td>Kitchen torch</td><td>Frozen desserts <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Cheesecakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Mousse cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span></td><td>Essential for sticky/dense textures</td><td>Knife heated (120-150°F); cake chilled</td><td>Varies; typically classical radial</td><td>Thermal conductivity affecting resistance</td><td>Very high; clean edges</td><td>Professional finish; minimal crumbing</td><td>Excellent; clean separation</td><td>Intermediate to Advanced</td><td>Limited cultural significance; technical approach</td><td>Professional pastry kitchens; fine dining</td><td>Requires special equipment</td><td>Modern professional technique (1970s)</td><td>Heat transfer reducing adhesion forces</td><td>High; clean serving with minimal cleaning</td><td>Safety concerns; risk of melting decorations</td><td>Induction-heated blades; temperature-controlled cutting</td></tr>
+                        <tr><td>**Floss/Wire Technique**</td><td>Unflavored dental floss</td><td>Guides for positioning</td><td>Soft cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Cheesecakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Layer cakes (horizontal) <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span></td><td>Ideal for soft, sticky textures</td><td>Room temperature to slightly chilled</td><td>Horizontal layer separation; can adapt to other patterns</td><td>Minimal surface tension; even pressure distribution</td><td>Very high for horizontal cuts</td><td>Invisible cutting process; clean layers</td><td>Good for layer separation</td><td>Intermediate</td><td>Minimal cultural aspects; practical technique</td><td>Professional bakeries; cake decoration</td><td>Excellent DIY solution</td><td>American innovation (1950s)</td><td>Distributed pressure; minimal surface area</td><td>Moderate; requires setup</td><td>Requires tension control; may compress soft cakes</td><td>Mechanized wire cutting arrays; vibrating wire systems</td></tr>
+                        <tr><td>**Geometric Template**</td><td>Template guides</td><td>Narrow paring knife</td><td>Designer cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Shaped cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Artistic presentations <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span></td><td>Works with firm, well-structured cakes</td><td>Any temperature</td><td>Complex geometric patterns; non-standard shapes</td><td>Geometric construction; defined patterns</td><td>Extremely high; template-guided</td><td>Artistic; designed presentation</td><td>Precise portion control</td><td>Advanced</td><td>Modern art-focused approach; emphasizes visual impact</td><td>High-end pastry shops; competition pieces</td><td>Requires special equipment</td><td>Contemporary (2000s)</td><td>Constrained cutting paths; guide systems</td><td>Low to moderate; prioritizes appearance over speed</td><td>Templates must be food-safe; requires planning</td><td>3D-printed custom templates; projection mapping guides</td></tr>
+                        <tr><td>**Sous Vide Blade**</td><td>Water-heated knife</td><td>Temperature controller</td><td>Delicate mousse cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Entremet cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Mirror glazed cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span></td><td>Perfect for multiple texture components</td><td>Precise blade temperature (95-105°F)</td><td>Any pattern, typically clean straight cuts</td><td>Precise thermal control; consistent heat application</td><td>Exceptional; professional-grade</td><td>Gallery-worthy presentation</td><td>Excellent consistency</td><td>Professional</td><td>Limited cultural significance; technical innovation</td><td>Michelin-starred establishments; luxury hotels</td><td>Impractical for home use</td><td>Modern culinary innovation (2010s)</td><td>Thermal equilibrium maintenance during cutting</td><td>Moderate; requires preparation</td><td>Expensive equipment; requires calibration</td><td>Integration with robotic cutting systems; molecular gastronomy applications</td></tr>
+                        <tr><td>**Liquid Nitrogen Dip**</td><td>Chef's knife (super-chilled)</td><td>Liquid nitrogen bath</td><td>Ice cream cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Mousse cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Bavarian creams <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span></td><td>Essential for ultra-soft, melting textures</td><td>Knife super-cooled (-320°F)</td><td>Clean, straight cuts; typically grid or radial</td><td>Flash-freezing surface tension; cryogenic preservation</td><td>Extremely high; momentarily solidifies surface</td><td>Scientific presentation; dramatic effect</td><td>Excellent for otherwise difficult textures</td><td>Professional</td><td>Theatrical tradition; performance culinary arts</td><td>Modernist cuisine; molecular gastronomy</td><td>Dangerous for home use</td><td>Scientific culinary movement (2000s)</td><td>Cryogenic freezing; phase transition manipulation</td><td>Moderate; requires safety protocols</td><td>Serious safety concerns; requires ventilation</td><td>Cryogenic shattering techniques; temperature-gradient plating</td></tr>
+                        <tr><td>**Laser Cutting**</td><td>Focused laser cutter</td><td>Computer guidance system</td><td>Fondant-covered cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span><br>Marzipan cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span><br>Sugar-work decorations <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span></td><td>Works with firm, uniform textures</td><td>Room temperature</td><td>Precision-engineered patterns; intricate designs</td><td>Computer-aided design; vector path following</td><td>Unparalleled precision</td><td>Futuristic; technically impressive</td><td>Perfect consistency</td><td>Professional specialist</td><td>Minimal traditional significance; technological marvel</td><td>Cutting-edge culinary competitions; food technology exhibitions</td><td>Unavailable for home use</td><td>Recent innovation (2015+)</td><td>Focused light energy; controlled vaporization</td><td>Low; prioritizes precision over practicality</td><td>Food-safe laser calibration; smoke management</td><td>Architectural cake structures; interlocking cake components</td></tr>
+                        <tr><td>**Ultrasonic Cutter**</td><td>Ultrasonic blade</td><td>Frequency generator</td><td>Delicate sponges <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Aerated cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Fragile decorations <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span></td><td>Ideal for preventing compression of delicate textures</td><td>Any temperature</td><td>Clean, compression-free cuts in any pattern</td><td>High-frequency vibration reducing friction</td><td>Exceptional; prevents structure collapse</td><td>No crumbs; perfect edges</td><td>Excellent for fragile components</td><td>Professional</td><td>Limited cultural relevance; technical solution</td><td>High-end pastry production; luxury baked goods</td><td>Not available to consumers</td><td>Recent food technology development (2010s)</td><td>Mechanical vibration reducing surface friction</td><td>High; minimal cleanup required</td><td>Expensive specialized equipment; requires power</td><td>Non-destructive cake archaeology; preserving interior structures</td></tr>
+                        <tr><td>**Water Jet Cutting**</td><td>Pressurized water jet</td><td>Computer guidance</td><td>Frozen cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Dense fruit cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span><br>Multiple component cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span></td><td>Works with any texture when properly calibrated</td><td>Typically frozen or very cold</td><td>Computer-designed patterns; unlimited complexity</td><td>Fluid dynamics; pressure-controlled erosion</td><td>Perfect precision</td><td>Industrial aesthetic; technical marvel</td><td>Perfect portion control</td><td>Professional specialist</td><td>None; purely technological approach</td><td>Industrial food production; large-scale events</td><td>Completely impractical for home</td><td>Industrial food technology (2000s)</td><td>Hydraulic erosion; pressure-focused cutting</td><td>Low; highly specialized</td><td>Extremely expensive; water contamination concerns</td><td>Cross-sectional revealing of interior patterns; impossible geometric shapes</td></tr>
+                        <tr><td>**Ceremonial Cutting Set**</td><td>Silver cake knife</td><td>Serving set with engraving</td><td>Wedding cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Anniversary cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Celebration tiers <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">☆</span></td><td>Traditional dense fruit cakes; rich textures</td><td>Room temperature</td><td>First cut by celebrants; remainder by staff</td><td>Symbolic rather than mathematical</td><td>Low; prioritizes ceremony over precision</td><td>Highly photogenic; ritual-focused</td><td>Poor consistency; symbolic first piece</td><td>Novice (symbolic cut only)</td><td>Extremely high; marriage rituals across cultures</td><td>Weddings; formal celebrations; milestone events</td><td>Traditional for special occasions</td><td>Ancient matrimonial traditions; documented since Roman times</td><td>Minimal technical consideration; ritual function</td><td>Very low; prioritizes ceremony</td><td>Requires photography coordination; public performance</td><td>Augmented reality enhancements; synchronized music/lighting effects</td></tr>
+                        <tr><td>**Sculptural Deconstruction**</td><td>Various carving tools</td><td>Artist's implements</td><td>Sculptural cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>3D novelty cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Architectural cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span></td><td>Complex mixed textures requiring specific approach</td><td>Varies by component</td><td>Non-standard; follows sculptural form</td><td>Topological mapping; 3D structural analysis</td><td>Variable; follows artistic intent</td><td>Theatrical; dramatic presentation</td><td>Poor consistency; artistic priority</td><td>Master level</td><td>Modern development; cake as performance art</td><td>Television competitions; celebrity events; viral content</td><td>Impractical for typical home use</td><td>Contemporary development (2000s)</td><td>Structural integrity analysis; load-bearing components</td><td>Very low; prioritizes impact over efficiency</td><td>Requires structural knowledge; engineering principles</td><td>Mechanical moving components; integrated special effects</td></tr>
+                        <tr><td>**Molecular Portioning**</td><td>Pipettes</td><td>Microplane</td><td>Deconstructed cakes <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Molecular gastronomy <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><br>Experimental textures <span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span><span class="rating">★</span></td><td>Transforms textures; creates new forms</td><td>Multiple temperatures; often flash-frozen components</td><td>Component separation rather than cutting</td><td>Chemical deconstruction; recombinant assembly</td><td>Scientific precision</td><td>Avant-garde; intellectual stimulation</td><td>Scientifically precise portions</td><td>Master specialist</td><td>Minimal traditional aspects; challenges conventions</td><td>World-class restaurants; culinary research</td><td>Completely impractical for home</td><td>Modern culinary movement (2000s)</td><td>Chemical transformation; molecular manipulation</td><td>Very low; extremely labor-intensive</td><td>Requires scientific knowledge; specialized ingredients</td><td>Flavor isolation; textural juxtapositions; aromatic combinations</td></tr>
+                        <tr><td>**Fair Division Protocol**</td><td>Mathematical tools</td><td>Participant markers</td><td>Any sharable cake</td><td>Any texture workable</td><td>Any temperature</td><td>Varies based on algorithm used</td><td>Envy-free division; proportional allocation</td><td>Moderate; focuses on perceived value</td><td>Fair distribution; mathematical elegance</td><td>Perfect subjective fairness</td><td>Technical understanding</td><td>Game theory applications; fair division traditions</td><td>Academic demonstrations; economic modeling</td><td>Theoretical rather than practical</td><td>Mathematical development (1940s-present)</td><td>Preference revelation mechanisms; strategy-proof allocation</td><td>Low; focuses on fairness not efficiency</td><td>Requires participant understanding; implementation complexity</td><td>Resource allocation systems; dispute resolution frameworks</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
